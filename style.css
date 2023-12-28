@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lorem {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.a {
+  width: 50px;
+  height: 50px;
+  background-color: #102b42;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
