@@ -8,16 +8,26 @@ html {
   margin: 0;
   padding: 0;
 }
-
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .lorem {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
+  text-align: center;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  justify-items: center;
 }
 
 .flex {
   display: flex;
+  margin-top: 20px;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -29,4 +39,16 @@ html {
   line-height: 50px;
   font-size: 20px;
   color: #fff;
+}
+@media (max-width:730px){
+  .lorem{
+    max-width: 500px;
+    
+  }
+}
+@media (max-width:415px){
+  .lorem{
+    max-width: 300px;
+    
+  }
 }
